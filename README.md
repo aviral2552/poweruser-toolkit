@@ -1,2 +1,2 @@
 # poweruser-scripts
-Collection of scripts intended for power users
+Collection of cross platform scripts intended to be used by power users
