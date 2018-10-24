@@ -2,8 +2,8 @@
 # A quirky random string generator
 #
 # Author: https://github.com/thelamehacker
-# Last update: 23 October 2018
-# Version: 0.1a
+# Last updated: 24 October 2018
+# Version: 0.2a
 #
 # License GNU GPL 3.0
 ###
@@ -16,6 +16,7 @@ import sys
 def getValue():
     patienceIsTheKey = 0
     sinsOfUser = []
+    print("This program generates random strings for your pleasure. You can use them as passwords, secret keys or as seed words for your crypto wallets.\n")
     print("How many seed words do you need (recommended >= 20): ", end='')
     while 1:
         try:
@@ -85,5 +86,5 @@ print("\nCrunching some random magic.....\n\n")
 
 for _ in range(words):
     time.sleep(int.from_bytes(os.urandom(8), byteorder="big") / ((1 << 64) - 1))
-    print(secrets.token_urlsafe(), end=' ', flush = True)
+    print(secrets.token_urlsafe(), end='\n', flush = True)
 print("\n\nYour " + str(words) + " random seed words have been delivered. Have fun!\n")
