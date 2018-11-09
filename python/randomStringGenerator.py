@@ -1,8 +1,8 @@
 ###
 # A quirky random string generator
 #
-# Author: https://github.com/thelamehacker
-# Last updated: 24 October 2018
+# Author: Lame Hacker (https://github.com/thelamehacker)
+# Last updated: 10 November 2018
 # Version: 0.2a
 #
 # License GNU GPL 3.0
