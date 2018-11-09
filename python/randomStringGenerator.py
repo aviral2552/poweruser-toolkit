@@ -16,8 +16,8 @@ import sys
 def getValue():
     patienceIsTheKey = 0
     sinsOfUser = []
-    print("This program generates random strings for your pleasure. You can use them as passwords, secret keys or as seed words for your crypto wallets.\n")
-    print("How many seed words do you need (recommended >= 20): ", end='')
+    print("This program generates random strings for your pleasure.\nYou can use them as passwords, secret keys or as seed words for your crypto wallets.\n")
+    print("How many seed word(s) do you need (recommended >= 20): ", end='')
     while 1:
         try:
             userInput = input().strip()
@@ -87,4 +87,4 @@ print("\nCrunching some random magic.....\n\n")
 for _ in range(words):
     time.sleep(int.from_bytes(os.urandom(8), byteorder="big") / ((1 << 64) - 1))
     print(secrets.token_urlsafe(), end='\n', flush = True)
-print("\n\nYour " + str(words) + " random seed words have been delivered. Have fun!\n")
+print("\n\nYour " + str(words) + " random seed word(s) have been delivered. Have fun!\n")
